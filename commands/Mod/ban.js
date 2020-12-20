@@ -14,9 +14,9 @@ client.on("message", (msg) => {
       if (member.hasPermission("BAN_MEMBERS")) {
         const user = mentions.users.first();
         if (user) {
-          const target = msg.guild.members.cache.get(usuario.id);
+          const target = msg.guild.members.cache.get(user.id);
           target.ban();
-          msg.channel.send(`**${usuario.username}** Has been banned. Reason: ${reason}`);
+          msg.channel.send(`**${user.username}** Has been banned. Reason: ${reason}`);
         } else {
           msg.channel.send(`${mention} Specify someone to ban!`);
         }

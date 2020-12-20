@@ -1,0 +1,11 @@
+//bot activity by murerCXV
+//Copy paste!  Put code in your file
+
+      const activities = [`This bot in ${client.guilds.cache.size} servers `,"The best bot | -help", "© this bot | V4.3.0 ", "By: murerCXV | AKA murer", "minecraft", "runing", "yay have 2K wins", "may give mod?", "Yeah ima bot!", "Got more perms dan u"];
+      setInterval(() => {
+        let activity = activities[Math.floor(Math.random() * activities.length)];
+        client.user.setActivity(activity, { type: "WATCHING" } ); //it can be PLAYING STREAMING COMPETING
+      }, 5000);
+      status: "online"
+    
+    //change activities or add more if you want one activity put 1 element in array.
